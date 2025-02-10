@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về bản thân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Xin chào, tôi là [Tên của bạn]</h1>
+    <p>
+        Tôi là một [nghề nghiệp hoặc lĩnh vực bạn đang làm việc] với [số năm kinh nghiệm] năm kinh nghiệm trong lĩnh vực [lĩnh vực chuyên môn]. 
+        Tôi đam mê [sở thích hoặc lĩnh vực bạn yêu thích] và luôn tìm kiếm cơ hội để học hỏi và phát triển bản thân.
+    </p>
+    <p>
+        Ngoài công việc, tôi thích [sở thích cá nhân] và thường dành thời gian cho [hoạt động yêu thích]. 
+        Tôi tin rằng việc cân bằng giữa công việc và cuộc sống cá nhân là rất quan trọng.
+    </p>
+    <button onclick="showMoreInfo()">Xem thêm thông tin</button>
+    <div id="moreInfo" style="display:none;">
+        <p>
+            Tôi đã tham gia vào nhiều dự án thú vị, bao gồm [mô tả ngắn gọn về một hoặc hai dự án]. 
+            Tôi luôn tìm kiếm những thách thức mới và mong muốn đóng góp vào sự phát triển của [công ty hoặc lĩnh vực bạn quan tâm].
+        </p>
+    </div>
+</div>
+
+<script>
+    function showMoreInfo() {
+        var moreInfo = document.getElementById("moreInfo");
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
